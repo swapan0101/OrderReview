@@ -1,0 +1,57 @@
+﻿[
+	{
+		id : 1,
+		orderNumber : 1,
+		orderDate : "2015-06-15",
+		productName : "NewsScreen",
+		orderStatus : "Shipped",
+		customerName : "GeorgiaDome",
+		salesPersonName : "Ted Turner",
+		expectedDeliveryDate : "2015-07-15"
+	},
+	{
+        id : 2,
+        orderNumber : 1,
+        orderDate : "2015-06-19T00:00:00-07:00",
+        productName : "RelativeScreen",
+        orderStatus : "Shipped",
+        customerName : "Boston University",
+        salesPersonName : "Albert Einstein",
+        expectedDeliveryDate : "2015-07-15T00:00:00-07:00"
+    },
+
+	{
+        id : 3,
+        orderNumber : 1,
+        orderDate : "2015-07-29T00:00:00-07:00",
+        productName : "MegaScreen",
+        orderStatus : "Delayed",
+        customerName : "Columbia",
+        salesPersonName : "Mary Poppins",
+        expectedDeliveryDate : "2015-08-29T00:00:00-07:00"
+    },
+
+	{
+        id : 4,
+        orderNumber : 1,
+        orderDate : "2015-08-15T00:00:00-07:00",
+        productName : "SuperScreen",
+        orderStatus : "InProcess",
+        customerName : "Motown Records",
+        salesPersonName : "Stevie Wonder",
+        expectedDeliveryDate : "2015-09-15T00:00:00-07:00"
+    },
+
+	{
+        id : 5,
+        orderNumber : 1,
+        orderDate : "2015-08-18T00:00:00-07:00",
+        productName : "PresidentialScreen",
+        orderStatus : "InProcess",
+        customerName : "White House",
+        salesPersonName : "Barak Obama",
+        expectedDeliveryDate : "2015-09-15T00:00:00-07:00"
+    }
+
+	
+]

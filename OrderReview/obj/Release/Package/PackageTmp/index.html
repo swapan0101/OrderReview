@@ -1,0 +1,124 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>order review</title>
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="styles/main.css">
+
+    <script src="scripts/vendor/modernizr-2.6.2.js"></script>
+</head>
+
+<body>
+    <!--[if lt IE 10]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <div class="container">
+        <div class="header">
+            <h3 class="text-muted"><a href="#">Home</a></h3>
+        </div>
+
+        <div class="row marketing">
+            <div class="col-lg-12">
+
+
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Customer</th>
+                            <th>Status</th>
+                            <th>Product</th>
+                        </tr>
+                    </thead>
+                    <tbody id="orders">
+                        <script id="order-preview-template" type="text/x-handlebars-template">
+                            {{#this}}
+
+             
+
+                            <tr data-id="{{id}}">
+                                <th>{{id}}</th>
+                                <td>{{customerName}}</td>
+                                <td>{{orderStatus}}</td>
+                                <td>{{productName}}</td>
+                                <td><a href="#/orders/view/{{id}}">See Details</a>
+                                <td>
+                            </tr>
+
+
+                            {{/this}}
+           
+                        </script>
+
+
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-12">
+                <div id="order-details" class="panel panel-default">
+                    <script id="order-detail-template" type="text/x-handlebars-template">
+                        {{#this}}
+           
+                        <div class="panel-heading">Order Id: {{id}}</div>
+                        <div class="panel-body" data-id="{{id}}">
+
+                            <dl class="dl-horizontal">
+                                <dt>Id</dt>
+                                <dd>{{id}}</dd>
+
+                                <dt>Customer</dt>
+                                <dd>{{customerName}}</dd>
+
+                                <dt>ETA</dt>
+                                <dd>{{expectedDeliveryDate}}</dd>
+
+                                <dt>Order Date</dt>
+                                <dd>{{orderDate}}</dd>
+
+                                <dt>Order Number</dt>
+                                <dd>{{orderNumber}}</dd>
+
+                                <dt>Order Status</dt>
+                                <dd>{{orderStatus}}</dd>
+
+                                <dt>Product</dt>
+                                <dd>{{productName}}</dd>
+                                <dt>Sales Person</dt>
+                                <dd>{{salesPersonName}}</dd>
+                            </dl>
+
+                        </div>
+                        {{/this}}
+         
+                    </script>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="footer">
+            <p>Swapan Roy - Order Viewer</p>
+        </div>
+    </div>
+
+    <script src="scripts/vendor.js"></script>
+
+    <script src="scripts/plugins.js"></script>
+    <script src="Scripts/Resource.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>
+
